@@ -14,7 +14,7 @@ services:
       - key: PAPER_TRADE
         value: "false"
       - key: CAPITAL
-        value: "1000"
+        value: "5000"
       - key: N_SHORTS
         value: "20"
       - key: LOOKBACK
