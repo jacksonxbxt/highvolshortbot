@@ -1,0 +1,23 @@
+services:
+  - type: worker
+    name: highvol-short-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BYBIT_API_KEY
+        sync: false
+      - key: BYBIT_API_SECRET
+        sync: false
+      - key: TESTNET
+        value: "true"
+      - key: PAPER_TRADE
+        value: "true"
+      - key: CAPITAL
+        value: "1000"
+      - key: N_SHORTS
+        value: "20"
+      - key: LOOKBACK
+        value: "30"
+      - key: LEVERAGE
+        value: "1"
