@@ -10,9 +10,9 @@ services:
       - key: BYBIT_API_SECRET
         sync: false
       - key: TESTNET
-        value: "true"
+        value: "false"
       - key: PAPER_TRADE
-        value: "true"
+        value: "false"
       - key: CAPITAL
         value: "1000"
       - key: N_SHORTS
